@@ -15,7 +15,22 @@ public class EDFP03_1_1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        ArrayStack<Integer> a=new ArrayStack<>(2);
+        a.push(1);
+        System.out.println(a.toString());
+        a.push(2);
+        System.out.println(a.peek());
+        System.out.println(a.toString());
+        a.push(3);
+        System.out.println(a.peek());
+        System.out.println(a.toString());
+        a.pop();
+        System.out.println(a.peek());
+        System.out.println(a.toString());
+        
+        
+        
+        
     }
     
 }
