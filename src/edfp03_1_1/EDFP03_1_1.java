@@ -15,20 +15,23 @@ public class EDFP03_1_1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        ArrayStack<Integer> a=new ArrayStack<>(2);
-        a.push(1);
-        System.out.println(a.toString());
-        a.push(2);
-        System.out.println(a.peek());
-        System.out.println(a.toString());
-        a.push(3);
-        System.out.println(a.peek());
-        System.out.println(a.toString());
-        a.pop();
-        System.out.println(a.peek());
-        System.out.println(a.toString());
+//        ArrayStack<Integer> a=new ArrayStack<>(2);
+//        a.push(1);
+//        System.out.println(a.toString());
+//        a.push(2);
+//        System.out.println(a.peek());
+//        System.out.println(a.toString());
+//        a.push(3);
+//        System.out.println(a.peek());
+//        System.out.println(a.toString());
+//        a.pop();
+//        System.out.println(a.peek());
+//        System.out.println(a.toString());
         
-        
+    CalculadoraPostFix c=new CalculadoraPostFix();
+    System.out.println(c.calculate("3 4 + 2 *"));
+    System.out.println(c.calculate("3 + + 2 *"));
+    System.out.println(c.calculate("7 4 -3 * 1 5 + / *"));
         
         
     }
